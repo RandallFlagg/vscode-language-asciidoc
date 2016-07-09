@@ -1,0 +1,27 @@
+{
+    "name": "language-asciidoc",
+    "displayName": "Asciidoc",
+    "description": "AsciiDoc(tor) language extension for the VS Code editor.",
+    "version": "0.0.1",
+    "publisher": "ldez",
+    "icon": "images/logo.png",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "asciidoc",
+            "aliases": ["AsciiDoc", "asciidoc", "AsciiDoctor"],
+            "extensions": [".adoc",".ad",".asc",".asciidoc",".adoc.txt"],
+            "configuration": "./asciidoc.configuration.json"
+        }],
+        "grammars": [{
+            "language": "asciidoc",
+            "scopeName": "source.asciidoc",
+            "path": "./syntaxes/asciidoc.tmLanguage"
+        }]
+    }
+}
