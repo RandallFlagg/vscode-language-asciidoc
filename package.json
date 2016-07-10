@@ -21,7 +21,7 @@
         "grammars": [{
             "language": "asciidoc",
             "scopeName": "source.asciidoc",
-            "path": "./syntaxes/asciidoc.tmLanguage"
+            "path": "./syntaxes/asciidoc.json"
         }]
     }
 }
