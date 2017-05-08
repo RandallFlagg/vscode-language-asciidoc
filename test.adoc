@@ -1,0 +1,104 @@
+
+.foobar
+[role]**foo** bar
+[role]*foo* bar
+[role]__foo__ bar
+[role]_foo_ bar
+[role]``foo`` bar
+[role]`foo` bar
+[role]^foo^bar^foo^bar
+[role]~foo~bar~foo~bar
+[role]##foo## bar
+[role role2]#foo# bar
+##foo## bar
+#foo# bar
+
+.strong
+[role]**foo** bar
+[role role2]*foo* bar
+[role role2]**foo** bar
+[.role#id]**foo** bar
+
+.emphasis
+[role]__foo__ bar
+[role role2]_foo_ bar
+[role role2]__foo__ bar
+[.role#id]__foo__ bar
+
+.mark
+[role]##foo## bar
+[role role2]#foo# bar
+[role role2]##foo## bar
+[.role#id]##foo## bar
+f##oo## bar
+#foo# bar
+
+.monospace
+[role]``foo`` bar
+[role role2]`foo` bar
+[role role2]``foo`` bar
+[.role#id]`foo` bar -
+
+.super
+[role]^foo^ bar
+[role role2]^foo^ bar
+[role role2]^foo^ bar
+[.role#id]^foo^ bar -
+[role]^foo^ bar
+[role role2]^foo^ bar
+[role role2]^foo^ bar
+[.role#id]^foo^ bar -
+
+.sub
+[role]~foo~ bar
+[role role2]~foo~ bar
+[role role2]~foo~ bar
+[.role#id]~foo~ bar -
+[role]~foo~ bar
+[role role2]~foo~ bar
+[role role2]~foo~ bar
+[.role#id]~foo~ bar -
+
+
+0 #bold# 1 ##bold# 2 ###bold# 3 # 4 ###bold## 5 ###bold### 6 ##bold### 7 #bold###
+0 _bold_ 1 __bold_ 2 ___bold_ 3 _ 4 ___bold__ 5 ___bold___ 6 __bold___ 7 _bold___
+0 *bold* 1 **bold* 2 ***bold* 3 * 4 ***bold** 5 ***bold*** 6 **bold*** 7 *bold***
+  [c   ]   [uc        ]             [uc     ]   [uc     ]    [uc    ]    [c   ]
+
+With AsciiDoc Preview:
+
+0 *bold* 1 **bold* 2 ***bold* 3 * 4 ***bold** 5 ***bold*** 6 **bold*** 7 *bold***
+  [c   ]   [uc        ][c   ]       [c                   ]   [uc    ][c        ]
+                                     [uc    ]   [uc     ]
+
+
+**b*old**
+
+***bold**
+
+**b*old***
+
+**bold* **
+
+*bold**
+
+__b_old__
+
+___bold__
+
+__b_old___
+
+__bold_ __
+
+_bold__
+
+
+##b#old##
+
+###bold##
+
+##b#old###
+
+##bold# ##
+
+#bold##
